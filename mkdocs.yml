@@ -5,13 +5,15 @@ theme:
   custom_dir: overrides
   logo: assets/mission-logo.png
   favicon: assets/mission-logo.png
+  
   features:
     - navigation.tabs
     - navigation.expand
-    - navigation.indexes
+    - navigation.indexes # do not enable feature toc.integrate
     - navigation.top
     - navigation.sections
     - navigation.tracking
+    - navigation.instant
     - search.highlight
     - search.suggest
     - search.share
@@ -64,11 +66,46 @@ extra_javascript:
   - javascripts/extra.js
 
 nav:
-  - Home: index.md
-  - Purchase:
+  - Home: 
+    - index.md
+    - Getting Started: getting-started.md
+    - Navigation Features: navigation-features.md
+  - Modules:
+    - module/index.md
+    - Stock: module/stock-module.md
+    - Purchase: module/purchase-module.md
+    - Expense: module/expense-module.md
+    - Selling: module/selling-module.md
+    - Project: module/project-module.md
+    - Income: module/income-module.md
+    - Service: module/service-module.md
+  - References:
+    - reference/index.md
+    - Trust: reference/trust-refs.md
+    - Branch: reference/branch-ref.md
+    - Product: reference/product-ref.md
+    - Department: reference/department-ref.md
+    - Project: reference/project-ref.md
+    - Location: reference/location-.md
+    - Glossary: reference/glossary-ref.md
+  - Setup:
+    - setup/index.md
+    - User: setup/user-setup.md
+    - Department: setup/department-setup.md
+    - Product: setup/product-setup.md
+    - Location: setup/location-setup.md
+    - Project: setup/project-setup.md
+    - Maintenance: setup/maintenance-setup.md
+  - Guides:
+    - guide/index.md
+    - Administration: admin-guide/.md
+    - User: user-guide/.md
+    - Upcoming: upcoming-guide/.md
+  - Reports:
+    - report/index.md
+  - Sample:
     - purchase/index.md
     - Goods Fulfillment by Central Store: purchase/purchase-flow1.md
     - Goods Fulfillment by Central Store and Supplier: purchase/purchase-flow2.md
     - Services Fulfillment: purchase/purchase-flow3.md
-  - Expense:
-    - expense/index.md
+    
